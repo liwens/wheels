@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src='../lib/scrollToPage/scrollToPage.js'></script>
+		<style type="text/css">
+			html,body{
+				height: 100%;
+				margin:0
+			}
+			.page{
+				width: 100%;
+				height: 100%;
+				font-size: 100px;
+				text-align: center;
+				line-height: 500px;
+			}
+			.page01{
+				background-color:yellow;
+			}
+			.page02{
+				background-color:sandybrown;
+			}
+			.page03{
+				background-color:aqua
+			}
+			.page04{
+				background-color: mediumaquamarine;
+			}
+			.page05{
+				background-color:rosybrown;
+			}		
+		</style>
+	</head>
+	<body>
+		<section class="page01 page">1</section>
+		<section class="page02 page">2</section>
+		<section class="page03 page">3</section>
+		<section class="page04 page">4</section>
+		<section class="page05 page">5</section>
+		
+		
+		<script type="text/javascript">
+	    new scrollToPage({
+	    	pages:['.page01','.page02','.page03','.page04','.page05']
+	    });
+		</script>
+	</body>
+</html>
